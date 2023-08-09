@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(223, 185, 191);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    width: 217.5px;
+    height: 78px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.middle {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stand {
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    left: -50px;
+    display: flex;
+    align-items: center;
+}
+
+.stand img {
+    transition: ease-in-out 0.5s;
+    opacity: 0;
+    position: absolute;
+    right: 100px;
+    height: auto;
+}
+
+.charInformation {
+    transition: ease-in-out 0.5s;
+    opacity: 0;
+    position: absolute;
+    right: 50px;
+    width: 50%;
+    height: 80%;
+}
+
+.charName {
+    width: 50%;
+    position: absolute;
+    left: 0px;
+    top: 50px;
+}
+
+.title {
+    color: rgb(24, 32, 92);
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.name-CN {
+    padding-bottom: 5px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./Font/DFKakuTaiHiStd-W4.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.name-EN {
+    color: rgb(154, 24, 24);
+    font-family: 'CustomFont', sans-serif;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.introduction {
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.arrow-left {
+    width: 10%;
+    position: absolute;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-left img {
+    width: 60%;
+    height: auto;
+}
+
+.arrow-left img:hover {
+    cursor: pointer;
+}
+
+.arrow-right {
+    width: 10%;
+    position: absolute;
+    right: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-right img:hover {
+    cursor: pointer;
+}
+
+.arrow-right img {
+    width: 60%;
+    height: auto;
+}
